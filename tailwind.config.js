@@ -19,6 +19,7 @@ export default {
       },
       colors: {
         myPrimary: '#121416',
+        myhover:'#2E299F',
         mySecondary: '#6BDDB9',
         tab: '#2CBE90',
         myBtn: '#473FEA',
