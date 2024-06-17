@@ -1,0 +1,47 @@
+
+
+
+/* blink online btn */
+
+
+  
+.circle-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    position: relative; /* Add this line */
+    margin: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #17B26A;
+  }
+  
+  .circle::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%); /* Center the element */
+    background-color: #5ae0a196;
+    animation: mymove 2s infinite;
+  }
+  
+  @keyframes mymove {
+    50% {
+      transform: translate(-50%, -50%) scale(2); /* Center and scale */
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2); /* Center and scale */
+      opacity: 0;
+    }
+  }
+  

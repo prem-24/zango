@@ -1,0 +1,15 @@
+.gradient-border {
+    position: relative;
+    padding: 1.1px; /* Adjust padding to set the border thickness */
+    border-radius: 12px; 
+    background: linear-gradient(to right, #c79cf3, #FB837C);
+  }
+  
+  .gradient-border > .inner {
+    border-radius: 30px; /* Slightly smaller to fit inside the outer border */
+    background: black; /* Inner background color */
+    padding: 1.5rem; /* Adjust padding for inner content */
+    width: 100%;
+    height: 100%;
+  }
+  
